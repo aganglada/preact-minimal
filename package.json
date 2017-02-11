@@ -1,0 +1,20 @@
+{
+  "name": "preact-seed",
+  "version": "1.0.0",
+  "description": "Preact minimal structure",
+  "main": "index.js",
+  "repository": {},
+  "author": "Alejandro Garcia Anglada <aganglada@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "preact": "^7.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "html-webpack-plugin": "^2.28.0",
+    "json-loader": "^0.5.4",
+    "svg-inline-loader": "^0.7.1",
+    "webpack": "^2.2.1"
+  }
+}
