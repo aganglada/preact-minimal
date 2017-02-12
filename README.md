@@ -19,7 +19,7 @@ git clone git@github.com:aganglada/preact-minimal.git
 Enter the folder
 
 ```bash
-cd preact-seed 
+cd preact-minimal
 ```
 
 Install dependencies
