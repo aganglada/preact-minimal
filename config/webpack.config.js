@@ -1,5 +1,8 @@
 /* global __dirname */
+const webpack = require('webpack');
 const path = require('path');
+const packageJson = require('../package.json');
+const HtmlPlugin = require('html-webpack-plugin');
 
 const basePath = path.join(__dirname, '..', 'app');
 
@@ -10,19 +13,35 @@ module.exports = function buildConfig({
 }) {
     const env = process.env.NODE_ENV || 'development';
 
+    console.log('Webpack running in ' + env);
+
     return {
         entry: {
-            app: path.join(basePath, 'app.js')
+            app: path.join(basePath, 'app.js'),
+            vendor: Object.keys(packageJson.dependencies)
         },
 
         output: {
-            path: path.join(basePath, 'assets'),
-            publicPath: '/',
+            path: path.join(basePath, '..', 'assets'),
+            publicPath: env === 'development' ? '/' : '',
             filename: '[name].js'
         },
 
         devtool,
-        plugins,
+
+        plugins: [
+
+            new HtmlPlugin({
+                title: 'Preact minimal',
+                template: path.join(basePath, 'index.html')
+            }),
+
+            new webpack.optimize.CommonsChunkPlugin({
+                name: 'vendor',
+                filename: '[name].js'
+            })
+
+        ].concat(plugins),
 
         resolve: Object.assign({}, {
 
@@ -46,10 +65,6 @@ module.exports = function buildConfig({
                     include: [
                         basePath
                     ]
-                },
-                {
-                    test: /\.json$/,
-                    loader: 'json-loader'
                 },
                 {
                     test: /\.svg$/,

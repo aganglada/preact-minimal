@@ -34,7 +34,7 @@ If you are using npm...
 npm i
 ```
 
-Run the dev server
+#### Run the dev server
 
 ```bash
 npm run dev
@@ -42,10 +42,18 @@ npm run dev
 
 You can start developing now on http://localhost:4000
 
+#### Build assets for production
+
+```bash
+npm run prod
+```
+
+Running this command will create an `assets` folder that you can expose to your server. 
+
 ### Coming soon
 
 * CSS Modules
-* Webpack config for prod
+* More docs
 * ...your suggestions...
 
 
