@@ -13,7 +13,7 @@ Minimal preact structure
 Clone the project 
 
 ```bash
-git clone git@github.com:aganglada/preact-seed.git
+git clone git@github.com:aganglada/preact-minimal.git
 ```
 
 Enter the folder
