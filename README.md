@@ -10,29 +10,34 @@ Minimal preact structure
 
 ### Usage
 
-```shell
-// clone the project
+Clone the project 
 
+```bash
 git clone git@github.com:aganglada/preact-seed.git
+```
 
+Enter the folder
 
-// Enter the folder
-
+```bash
 cd preact-seed 
+```
 
+Install dependencies
 
-// Install dependencies
-
+```bash
 yarn 
+```
 
-// If you are using npm...
+If you are using npm...
 
+```bash
 npm i
+```
 
-// Run the dev server
+Run the dev server
 
+```bash
 npm run dev
-
 ```
 
 You can start developing now on http://localhost:4000
