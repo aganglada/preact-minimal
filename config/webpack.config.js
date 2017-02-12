@@ -16,7 +16,7 @@ module.exports = function buildConfig({
         },
 
         output: {
-            path: path.join(__dirname, 'assets'),
+            path: path.join(basePath, 'assets'),
             publicPath: '/',
             filename: '[name].js'
         },
@@ -49,6 +49,12 @@ module.exports = function buildConfig({
                     loader: 'svg-inline-loader'
                 }
             ]
+        },
+
+        devServer: {
+            noInfo: true,
+            port: 4000,
+            contentBase: path.join(basePath, 'assets')
         }
     };
 };

@@ -1,25 +1,15 @@
 /* global __dirname */
 
 const path = require('path');
+const config = require('./webpack.config');
 const HtmlPlugin = require('html-webpack-plugin');
 
-module.exports = {
-    devtool: 'eval',
-
-    entry: {
-        app: path.join(__dirname, '..', 'app', 'app.js')
-    },
-
-    output: {
-        path: path.join(__dirname, 'assets'),
-        publicPath: '/',
-        filename: '[name].js'
-    },
+module.exports = config({
 
     plugins: [
         new HtmlPlugin({
             title: 'Preact minimal',
-            template: path.join(__dirname, '..', '')
+            template: path.join(__dirname, '..', 'app', 'index.html')
         })
     ]
-};
+});
