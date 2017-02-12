@@ -25,10 +25,17 @@ module.exports = function buildConfig({
         plugins,
 
         resolve: Object.assign({}, {
+
             modules: [
                 'node_modules',
                 'app'
-            ]
+            ],
+
+            alias: {
+                views: path.join(basePath, 'views'),
+                components: path.join(basePath, 'components')
+            }
+
         }, resolve),
 
         module: {
