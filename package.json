@@ -1,10 +1,10 @@
 {
-  "name": "preact-seed",
+  "name": "preact-minimal",
   "version": "1.0.0",
   "description": "Preact minimal structure",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aganglada/preact-seed.git"
+    "url": "git+https://github.com/aganglada/preact-minimal.git"
   },
   "author": "Alejandro Garcia Anglada <aganglada@gmail.com>",
   "license": "MIT",

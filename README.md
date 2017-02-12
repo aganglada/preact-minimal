@@ -1,4 +1,4 @@
-# :rocket: preact-seed
+# :rocket: preact-minimal
 Minimal preact structure
 
 ### Stack
@@ -10,7 +10,7 @@ Minimal preact structure
 
 ### Usage
 
-```bash
+```shell
 // clone the project
 
 git clone git@github.com:aganglada/preact-seed.git
@@ -46,4 +46,4 @@ You can start developing now on http://localhost:4000
 
 ### Contributing
 
-[Pull request](https://github.com/aganglada/preact-seed/pulls) are more than welcome
+[Pull request](https://github.com/aganglada/preact-minimal/pulls) are more than welcome
