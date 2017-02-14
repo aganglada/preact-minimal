@@ -1,20 +1,20 @@
 /* global __dirname */
-const webpack = require('webpack');
-const path = require('path');
-const packageJson = require('../package.json');
-const HtmlPlugin = require('html-webpack-plugin');
+import webpack from 'webpack';
+import postcss, { getCSSLoaderConfig } from './postcss.config';
+import path from 'path';
+import packageJson from '../package.json';
+import HtmlPlugin from 'html-webpack-plugin';
 
 const basePath = path.join(__dirname, '..', 'app');
+const env = process.env.NODE_ENV || 'development';
 
-module.exports = function buildConfig({
+console.log('Webpack running in ' + env);
+
+export default ({
     plugins = [],
     resolve = {},
     devtool = 'eval'
-}) {
-    const env = process.env.NODE_ENV || 'development';
-
-    console.log('Webpack running in ' + env);
-
+}) => {
     return {
         entry: {
             app: path.join(basePath, 'app.js'),
@@ -39,7 +39,9 @@ module.exports = function buildConfig({
             new webpack.optimize.CommonsChunkPlugin({
                 name: 'vendor',
                 filename: '[name].js'
-            })
+            }),
+
+            new webpack.LoaderOptionsPlugin({ options: { postcss } }),
 
         ].concat(plugins),
 
@@ -52,7 +54,8 @@ module.exports = function buildConfig({
 
             alias: {
                 views: path.join(basePath, 'views'),
-                components: path.join(basePath, 'components')
+                components: path.join(basePath, 'components'),
+                styles: path.join(basePath, 'styles')
             }
 
         }, resolve),
@@ -69,7 +72,9 @@ module.exports = function buildConfig({
                 {
                     test: /\.svg$/,
                     loader: 'svg-inline-loader'
-                }
+                },
+
+                getCSSLoaderConfig(env)
             ]
         },
 

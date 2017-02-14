@@ -1,9 +1,9 @@
 /* global __dirname */
+import webpack from 'webpack';
+import config from './webpack.config';
+import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
-const webpack = require('webpack');
-const config = require('./webpack.config');
-
-module.exports = config({
+export default config({
 
     devtool: 'source-map',
 
@@ -23,6 +23,8 @@ module.exports = config({
                 warnings: false,
                 drop_console: false
             }
-        })
+        }),
+
+        new ExtractTextPlugin('[name].css')
     ]
 });
