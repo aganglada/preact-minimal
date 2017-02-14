@@ -1,11 +1,21 @@
 # :rocket: preact-minimal
-Minimal preact structure
+Minimal preact structure. 
+
+### Motivation
+
+[preact](https://github.com/developit/preact) is just soooooo fast! :zap: :zap: :zap: But when 
+you have an idea and want to start coding right away, then it becomes really hard and time 
+consuming to setup and have your application ready to start your development.
+
+**preact-minimal** comes to save your time providing you with the minimal and sufficient kit of
+tools you need.
 
 ### Stack
 
 * preact
 * preact-router
 * babel
+* cssnext
 * webpack 2
 
 ### Usage
@@ -52,9 +62,8 @@ Running this command will create an `assets` folder that you can expose to your 
 
 ### Coming soon
 
-* CSS Modules
-* More docs
-* ...your suggestions...
+* Docs
+* Your suggestions
 
 
 ### Contributing
