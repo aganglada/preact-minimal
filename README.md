@@ -1,5 +1,7 @@
-# :rocket: preact-minimal
+# :rocket: preact-minimal 
 Minimal preact structure. 
+
+[![Build Status](https://travis-ci.org/aganglada/preact-minimal.svg?branch=master)](https://travis-ci.org/aganglada/preact-minimal)
 
 ### Motivation
 
