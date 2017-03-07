@@ -21,6 +21,8 @@ renderApp();
 
 if (module.hot) {
     module.hot.accept('views/home/home', renderApp);
-} else {
+}
+
+if (process.env.NODE_ENV === 'production') {
     offlinePluginRuntime.install();
 }

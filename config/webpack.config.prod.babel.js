@@ -29,10 +29,12 @@ export default config({
         new OfflinePlugin({
             caches: {
                 main: [
-                    'index.html',
                     'app.css',
                     'app.js',
                     'vendor.js'
+                ],
+                externals: [
+                    'index.html'
                 ],
                 optional: [
                     ':rest:'
