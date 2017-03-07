@@ -1236,7 +1236,7 @@ decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
-deep-extend@~0.4.0:
+deep-extend@^0.4.0, deep-extend@~0.4.0:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.4.1.tgz#efe4113d08085f4e6f9687759810f807469e2253"
 
@@ -1334,6 +1334,10 @@ ecc-jsbn@~0.1.1:
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
+
+ejs@^2.3.4:
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.5.6.tgz#479636bfa3fe3b1debd52087f0acb204b4f19c88"
 
 electron-to-chromium@^1.2.2:
   version "1.2.2"
@@ -2140,7 +2144,7 @@ loader-runner@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/loader-runner/-/loader-runner-2.3.0.tgz#f482aea82d543e07921700d5a46ef26fdac6b8a2"
 
-loader-utils@^0.2.11, loader-utils@^0.2.16, loader-utils@^0.2.7, loader-utils@~0.2.2:
+loader-utils@0.2.x, loader-utils@^0.2.11, loader-utils@^0.2.16, loader-utils@^0.2.7, loader-utils@~0.2.2:
   version "0.2.16"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-0.2.16.tgz#f08632066ed8282835dff88dfb52704765adee6d"
   dependencies:
@@ -2266,7 +2270,7 @@ minimalistic-assert@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/minimalistic-assert/-/minimalistic-assert-1.0.0.tgz#702be2dda6b37f4836bcb3f5db56641b64a1d3d3"
 
-minimatch@^3.0.0, minimatch@^3.0.2:
+minimatch@^3.0.0, minimatch@^3.0.2, minimatch@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.3.tgz#2a4e4090b96b2db06a9d7df01055a62a77c9b774"
   dependencies:
@@ -2429,6 +2433,16 @@ object.omit@^2.0.0:
 obuf@^1.0.0, obuf@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/obuf/-/obuf-1.1.1.tgz#104124b6c602c6796881a042541d36db43a5264e"
+
+offline-plugin@^4.6.1:
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/offline-plugin/-/offline-plugin-4.6.1.tgz#b157545a1cdc54851a3b19fb0c444940a208e132"
+  dependencies:
+    deep-extend "^0.4.0"
+    ejs "^2.3.4"
+    loader-utils "0.2.x"
+    minimatch "^3.0.3"
+    slash "^1.0.0"
 
 on-finished@~2.3.0:
   version "2.3.0"

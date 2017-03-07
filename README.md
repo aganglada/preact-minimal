@@ -20,6 +20,10 @@ tools you need.
 * cssnext
 * webpack 2
 
+### Demo 
+
+http://preact-minimal.netlify.com
+
 ### Usage
 
 Clone the project 

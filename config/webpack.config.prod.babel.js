@@ -1,6 +1,7 @@
 /* global __dirname */
 import webpack from 'webpack';
 import config from './webpack.config';
+import OfflinePlugin from 'offline-plugin';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 export default config({
@@ -22,6 +23,26 @@ export default config({
             compress: {
                 warnings: false,
                 drop_console: false
+            }
+        }),
+
+        new OfflinePlugin({
+            caches: {
+                main: [
+                    'index.html',
+                    'app.css',
+                    'app.js',
+                    'vendor.js'
+                ],
+                optional: [
+                    ':rest:'
+                ]
+            },
+
+            AppCache: false,
+
+            ServiceWorker: {
+                events: true
             }
         }),
 
