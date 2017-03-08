@@ -23,5 +23,16 @@ if (module.hot) {
 }
 
 if (process.env.NODE_ENV === 'production') {
-    require('offline-plugin/runtime').install();
+    const runtime = require('offline-plugin/runtime');
+
+    runtime.install({
+        onUpdateReady: () => {
+            // Tells to new SW to take control immediately
+            runtime.applyUpdate();
+        },
+        onUpdated: () => {
+            // Reload the webpage to load into the new version
+            window.location.reload();
+        },
+    });
 }
