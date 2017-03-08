@@ -27,22 +27,7 @@ export default config({
         }),
 
         new OfflinePlugin({
-            caches: {
-                main: [
-                    '/app.css',
-                    '/app.js',
-                    '/vendor.js'
-                ],
-                externals: [
-                    '/index.html'
-                ],
-                optional: [
-                    ':rest:'
-                ]
-            },
-
             AppCache: false,
-
             ServiceWorker: {
                 events: true
             }
