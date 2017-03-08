@@ -41,7 +41,7 @@ export default ({
                 filename: '[name].js'
             }),
 
-            new webpack.LoaderOptionsPlugin({ options: { postcss } }),
+            new webpack.LoaderOptionsPlugin({ options: { postcss } })
 
         ].concat(plugins),
 

@@ -26,6 +26,8 @@ export default config({
             }
         }),
 
+        new ExtractTextPlugin('[name].css'),
+
         new OfflinePlugin({
             version: '[hash]',
             caches: {
@@ -45,8 +47,6 @@ export default config({
             ServiceWorker: {
                 events: true
             }
-        }),
-
-        new ExtractTextPlugin('[name].css')
+        })
     ]
 });

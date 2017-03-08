@@ -64,7 +64,15 @@ You can start developing now on http://localhost:4000
 npm run prod
 ```
 
-Running this command will create an `assets` folder that you can expose to your server. 
+Running this command will create an `assets` folder that you can expose to your server.
+ 
+#### Production mode in local
+
+```bash
+npm run start
+```
+
+You can check on http://localhost:8080
 
 ### Coming soon
 
