@@ -1,6 +1,5 @@
 import Router from 'preact-router';
 import { h, render } from 'preact';
-import offlinePluginRuntime from 'offline-plugin/runtime';
 
 import Home from 'views/home/home';
 
@@ -24,5 +23,25 @@ if (module.hot) {
 }
 
 if (process.env.NODE_ENV === 'production') {
-    offlinePluginRuntime.install();
+    const runtime = require('offline-plugin/runtime');
+
+    runtime.install({
+        onUpdateReady: () => {
+            console.log('SW Event:', 'onUpdateReady');
+
+            // Tells to new SW to take control immediately
+            runtime.applyUpdate();
+        },
+
+        onUpdated: () => {
+            console.log('SW Event:', 'onUpdated');
+
+            // Reload page to load the new version
+            window.location.reload();
+        },
+
+        onUpdateFailed: () => {
+            console.log('SW Event:', 'onUpdateFailed');
+        }
+    })
 }
