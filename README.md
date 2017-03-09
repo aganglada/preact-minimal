@@ -26,7 +26,7 @@ tools you need.
 
 ### Demo 
 
-http://preact-minimal.netlify.com
+https://preact-minimal.aganglada.com
 
 ### Want to start right now?
 
