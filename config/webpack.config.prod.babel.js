@@ -29,21 +29,7 @@ export default config({
         new ExtractTextPlugin('[name].css'),
 
         new OfflinePlugin({
-            version: '[hash]',
-            caches: {
-                main: [
-                    'index.html',
-                    'app.css',
-                    'vendor.js',
-                    'app.js'
-                ],
-                optional: [
-                    ':rest:'
-                ]
-            },
-
             AppCache: false,
-
             ServiceWorker: {
                 events: true
             }
