@@ -1,8 +1,6 @@
-<div align="center">
-    <img alt="Preact" title="Preact" src="https://cdn.rawgit.com/developit/b4416d5c92b743dbaec1e68bc4c27cda/raw/3235dc508f7eb834ebf48418aea212a05df13db1/preact-logo-trans.svg" width="250"/>
-    <img style="margin-left:-30px" alt="Preact" title="Preact" src="http://www.clker.com/cliparts/k/j/I/4/O/P/rocket.svg" width="40"/>
-    <h4 style="margin:0">minimal</h4>
-</div>
+<p align="center">
+    <img alt="Preact" title="Preact" src="https://s3.postimg.org/i78nzh56b/preact_minimal.jpg"/>
+</p>
 
 
 # :rocket: preact-minimal
