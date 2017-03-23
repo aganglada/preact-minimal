@@ -18,7 +18,6 @@ export default ({
     return {
         entry: {
             app: path.join(basePath, 'app.js'),
-            vendor: Object.keys(packageJson.dependencies)
         },
 
         output: {
@@ -38,7 +37,8 @@ export default ({
 
             new webpack.optimize.CommonsChunkPlugin({
                 name: 'vendor',
-                filename: '[name].js'
+                filename: '[name].js',
+                minChunks: module => module.context && module.context.indexOf('node_modules') !== -1,
             }),
 
             new webpack.LoaderOptionsPlugin({ options: { postcss } })
