@@ -9,7 +9,7 @@
   "author": "Alejandro Garcia Anglada <aganglada@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "preact": "^7.2.0",
+    "preact": "^8.1.0",
     "preact-router": "^2.4.1"
   },
   "devDependencies": {
