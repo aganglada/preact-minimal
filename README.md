@@ -20,7 +20,7 @@ tools you need.
 
 * [preact](https://github.com/developit/preact)
 * [preact-router](https://github.com/developit/preact-router)
-* [webpack 2](https://webpack.js.org)
+* [webpack](https://webpack.js.org)
 * [babel](https://babeljs.io/)
 * [cssnext](http://cssnext.io/)
 
