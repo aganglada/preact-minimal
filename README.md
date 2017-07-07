@@ -30,29 +30,11 @@ https://preact-minimal.aganglada.com
 
 ### Want to start right now?
 
-> Follow the next steps
-
-Clone the project 
+> Follow this steps 
 
 ```bash
 git clone git@github.com:aganglada/preact-minimal.git
-```
-
-Enter the folder
-
-```bash
 cd preact-minimal
-```
-
-Install dependencies
-
-```bash
-yarn 
-```
-
-If you are using npm...
-
-```bash
 npm i
 ```
 
@@ -79,6 +61,14 @@ npm run start
 ```
 
 You can check on http://localhost:8080
+
+### Preact Developer Tools
+
+You can inspect and modify the state of your Preact UI components at runtime using the [React Developer Tools](https://github.com/facebook/react-devtools) browser extension.
+
+1. Install the [React Developer Tools](https://github.com/facebook/react-devtools) extension
+2. [Import the `preact/devtools`](src/index.js#L21) module in your app
+3. Reload and go to the 'React' tab in the browser's development tools
 
 ### Coming soon
 
