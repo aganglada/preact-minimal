@@ -73,7 +73,7 @@ You can inspect and modify the state of your Preact UI components at runtime usi
 ### Coming soon
 
 * Docs
-* Styled components?
+* [Styled components?](https://github.com/aganglada/preact-minimal/issues/4)
 * Your suggestions
 
 
