@@ -8,7 +8,7 @@ import Header from 'components/header/header';
 const renderApp = () => {
     render((
         <article>
-            <Header title="Hello World" />
+            <Header title="Preact minimal 🚀" />
             <Router>
                 <Home path="/"/>
             </Router>
