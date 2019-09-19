@@ -1,9 +1,6 @@
 {
-  "presets": [
-    "es2015",
-    "react"
-  ],
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
   "plugins": [
-    ["transform-react-jsx", { "pragma":"h" }]
+    ["@babel/plugin-transform-react-jsx", { "pragma": "Preact.h", "pragmaFrag": "Preact.Fragment" }]
   ]
 }
